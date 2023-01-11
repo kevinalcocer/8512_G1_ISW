@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    
+    <title>Formulario</title>
+</head>
+<body>
+<div id="fondo">
+    <div class="contenedor-master">
+        <div id="registro-header">
+            <h2>Crear cuenta de U.C</h2>
+
+        </div>
+
+    <form name "form" action="registro.php" method="post"><p>
+
+        <div class="crear-container"> 
+            <h2>Datos Del Dueño</h2>
+           <b>Nombres:</b> <input type="text" name="nombres" class="redondo" required><p>
+
+            <b>Apellidos:</b><input type="text" name="apellidos" class="redondo"  required><p>
+
+            <b>Número de cédula:</b><input type="text" name="cedula" class="redondo"  required><p>
+             
+            <b>Correo:</b><input type="text" name="correo" class="redondo"  required><p>
+
+            <b>Telefono:</b><input type="text" name="telefono" class="redondo"  required><p>
+
+            <b>Usuario:</b><input type="text" name="usuario" class="redondo"  required><p>
+
+            <b>Clave:
+            <p>
+            </b><input type="password" name="clave" class="redondo"  required><p>
+
+        </div>
+        <div class="crear-container2"> 
+            <h2>Datos de la mascota</h2>
+
+           <b>Nombre de la mascota :
+            <p>
+           </b><input type="text" name="nombresmascota" class="redondo"  required><p>
+
+            <b>Edad de la mascota :
+            <p>
+            </b><input type="text" name="edadmascota" class="redondo"  required><p>
+
+            <b>Sexo de la mascota :
+            <p>
+            </b><select type="text" name="sexomascota" class="redondo"  required><p></p>
+                                    <option value="male">Macho</option>
+                                    <option value="female">Hembra</option>
+                                    </select><p> 
+
+            <b>Raza de la mascota :
+            <p>
+            </b><input type="text" name="razamascota" class="redondo"  required><p>
+
+            <b>Tamaño de la mascota :
+            <p>
+            </b><select type="text" name="tamanomascota" class="redondo"  required>
+                                    <option value="pequeño">Pequeño</option>
+                                    <option value="mediano">Mediano</option>
+                                    <option value="grande">Grande</option>
+                                </select><p></p> 
+
+            <b>¿La mascota está vacunada? :
+            <p>
+            </b><select type="text" name="vacunamascota" class="redondo"  required>
+                                            <option value="si">Sí</option>
+                                            <option value="no">No</option>
+                                        </select><p></p> 
+        </div>
+        <div class="boton-enviar"> 
+            <input type="submit" value="Registrar" class="redondo">
+            <input type="reset" value="Borrar" class="redondo">
+        </div>            
+    </form>
+</div>
+</div>    
+</body>
+</html>
