@@ -1,0 +1,25 @@
+
+/* CSS */
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.containerr {
+  max-width: 450px;
+  margin-left: 0px;
+}
+.habit {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.habit h3 {
+  margin: 0;
+  margin-left: auto;
+}
+.habit p {
+  margin: 0;
+  font-size: 14px;
+}

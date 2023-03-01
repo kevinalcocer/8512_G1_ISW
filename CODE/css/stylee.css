@@ -1,0 +1,79 @@
+.uno li a {
+
+    text-decoration: none;
+    color: #666; 
+    font-family: arial;
+    
+    }
+    
+    .uno li ul li{
+    margin-left: -40px;
+    }
+    
+    .dos>li{
+    font-weight: 300; 
+    list-style: none;
+    }
+    
+    .dos>li>a:hover{ 
+        color: red; 
+        margin-left: 20px;
+    }
+    
+    .uno>li{
+    list-style: none;
+    width: 1000px; 
+    height: 20px; 
+    overflow: hidden; 
+    font-weight: 600;
+    }
+    
+    .uno>li:hover{
+    
+    height: auto;
+    }
+    .mimenu{
+    background-color: #ccc;
+    overflow: hidden; 
+    width: 200px;
+    }
+
+    .uno > li {
+        display: block;
+        float: left;
+        width: 80px;
+        list-style: none;
+        height: 20px;
+        overflow: hidden;
+        background: #333;
+    }
+    .uno > li:hover {
+        height: auto;
+    
+    }
+
+
+
+    .dos > li {
+        list-style: none;
+        margin-left: -30px;
+
+    }
+
+    .dos a {
+color: #fff;
+text-decoration: none;
+    }
+
+
+
+    .uno > li > a{
+        width: 100px;
+        display: block;
+        float: left;
+        text-align:center;
+        text-decoration:none;
+        color: #fff;
+        background: #333;
+
+        }
