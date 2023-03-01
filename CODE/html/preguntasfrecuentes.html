@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">  
+    <meta charset="UTF-8">     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="nosotros.css">  
+    <link rel="stylesheet" type="text/css" href="footer-styles.css">
+
+    <title>UNIVERSIDAD CANINA</title>
+
+<link rel="stylesheet" type="text/css" href=""> <body>
+
+</head>
+
+
+<body>
+    <header>
+        <h1>UNIVERSIDAD CANINA</h1>
+
+      <nav>
+        <ul>
+            <li><a href="PaginaIn.html">Home</a></li> 
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+            <li><a href="iniciardoble.html">Mi cuenta</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <h2>Escuela para el Comportamiento de Perros</h2>
+    <p>Bienvenido a la sección de Preguntas Frecuentes de Universidad Canina, aquí podrás ver algunas preguntas frecuentes  sobre nuestra institución.</p>
+    
+    <main>
+        <section id="nosotros">
+
+            <div>
+                <h3 onclick="showAnswer('answer1')">¿Qué es la Universidad Canina?</h3>
+                <p id="answer1" style="display: none;">La Universidad Canina es una institución de formación en comportamiento de perros con más de 20 años de experiencia. Ofrece una amplia 
+                    gama de cursos y programas de entrenamiento de calidad para los amantes de los perros.</p>
+              </div>
+              <div>
+                <h3 onclick="showAnswer('answer2')">¿Cuáles son los programas ofrecidos por la Universidad Canina?</h3>
+                <p id="answer2" style="display: none;">La Universidad Canina ofrece una amplia gama de cursos y programas de entrenamiento de perros.</p>
+              </div>
+              
+              <div>
+                <h3 onclick="showAnswer('answer3')">¿Cuál es la metodología de enseñanza utilizada en la Universidad Canina?</h3>
+                <p id="answer3" style="display: none;"> En Universidad Canina, creemos en la importancia de una formación integral para los perros, no solo en términos de obediencia y comportamiento, sino también en términos de salud y bienestar. Nos esforzamos por ofrecer programas 
+                    de entrenamiento eficaces y amables para perros de todas las edades y niveles de habilidad. </p>
+              </div>
+
+              <div>
+                <h3 onclick="showAnswer('answer4')">¿Cuáles son las credenciales y experiencia de los instructores de la Universidad Canina?</h3>
+                <p id="answer4" style="display: none;">Nuestro equipo está compuesto por expertos en entrenamiento canino y comportamiento animal, todos ellos con 
+                    años de experiencia en el sector y una gran pasión por los perros.</p>
+              </div>
+            <div>
+              <h3 onclick="showAnswer('answer5')">¿Hay un límite de tamaño para los perros que pueden ser entrenados en la Universidad Canina?</h3>
+              <p id="answer5" style="display: none;">Lo más importante es que el perro sea saludable y tenga un comportamiento adecuado, independientemente de su tamaño.</p>
+            </div>
+            
+            <div>
+              <h3 onclick="showAnswer('answer6')">¿Hay una política de reembolso en la Universidad Canina?</h3>
+              <p id="answer6" style="display: none;">
+                    *Los reembolsos solo se procesan si la solicitud se hace dentro de un plazo determinado después de la compra, generalmente de 7 a 30 días.
+                    <br>*Los productos o servicios deben estar sin usar y en su embalaje original. 
+                    <br>*La compañía puede deducir una tarifa de procesamiento o cargos administrativos de la cantidad reembolsada.
+                    <br>*Los reembolsos se realizan a la forma original de pago.
+                    <br>*Las compras realizadas a través de terceros o resellers no están cubiertas por la política de reembolso de la compañía.</p>
+            </div>
+        </section>
+      </main>
+  </body>
+  <iframe src="footer.html" frameborder="0px" width="100%" height="300"></iframe>
+
+  <script>
+    function showAnswer(id) {
+      let answer = document.getElementById(id);
+      if (answer.style.display === "none") {
+        answer.style.display = "block";
+      } else {
+        answer.style.display = "none";
+      }
+    }
+  </script>
+</body> 
+</html>

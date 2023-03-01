@@ -1,0 +1,91 @@
+<?php
+session_start();
+  if(!isset($_SESSION['logemail'])){
+    header("location: login.php");
+  }
+  $logemail = $_SESSION['logemail'];
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estiloo.css">  
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estiloss.css">
+    <link rel="stylesheet" type="text/css" href="footer-styles.css">
+<title>UNIVERSIDAD CANINA</title>
+<link rel="stylesheet" type="text/css" href=""> <body>
+<style>
+    #header ul li {
+        display: inline;
+        
+    }
+    
+    #header ul ul {
+        display: none;
+        position: absolute;
+
+    }
+
+    #header ul li:hover ul {
+        display: block;
+
+    }
+</style>
+</head>
+<h1>UNIVERSIDAD CANINA</h1>
+<nav>
+<ul>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="">Iniciar entrenamiento</a>
+                <ul class="dos">
+                    <li><a href="Buenos_Hábitos.html">Buenos Hábitos</a></li>
+                    <li><a href="Adiestramiento.html">Adiestramiento</a></li>      
+                    <li><a href="">Corregir</a></li>
+                </ul>
+            </li> 
+    
+            <li><a href="">Consejos Nutricionales</a>
+                <ul>
+                    <li><a href="">Mejora la digestión</a></li>
+                    <li><a href="">Mejora su condición física</a></li>      
+                    <li><a href="">Novedades de la vida de mascotas</a></li>
+                    <li><a href="">Consejos, dudas y necesidades nutricionales.</a></li>   
+                </ul>
+            </li>
+    
+            <li><a href="">Consultar reportes</a>
+                <ul>
+                    <li><a href="">Ingresar al menú de opciones</a></li>
+                    <li><a href="">Elegir la opción de reportes</a></li>      
+                    <li><a href="">Visualizar estadísticas de reportes</a></li>
+                </ul>
+            </li>
+    
+            <li><a href="PaginaIn.html">Salir</a></li>
+        </ul>
+    </div>
+    
+
+</ul>
+<br>
+</nav>
+<div id="contenedor">
+    <div id="progreso-bar-contenedor">
+        <div id="progreso-bar"></div>
+    </div>
+    <div id="contenido">
+        <img src="" alt="" id="img1">
+        <img src="" alt="" id="img2">      
+    </div>
+    <div id="indicadores">
+
+    </div>
+    </div>
+    <iframe src="footer.html" frameborder="0px" width="100%" height="300"></iframe>
+
+  <script src="carrusel/carrusel.js"></script>
+</body> 
+</html>
