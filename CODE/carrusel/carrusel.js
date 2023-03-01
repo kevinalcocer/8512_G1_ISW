@@ -1,0 +1,47 @@
+addEventListener("DOMContentLoaded", () => {
+  const Imageness = ["Imageness/perrospag1.jpg", "Imageness/seguridad.jpg", "Imageness/feliz.jpg", "Imageness/perritodep.jpg"];
+  let i = 1;
+
+  const img1 = document.querySelector("#img1");
+  const img2 = document.querySelector("#img2");
+  const progressBar = document.querySelector("#progreso-bar");
+  const divIndicadores = document.querySelector("#indicadores");
+
+  let porcentaje_base = 100 / Imageness.length;
+  let porcentaje_actual = porcentaje_base;
+  for (let index = 0; index < Imageness.length; index++) {
+    const div = document.createElement("div");
+    div.classList.add("circles");
+    div.id = index;
+    divIndicadores.appendChild(div);
+  }
+  progressBar.style.width = `${porcentaje_base}%`;
+  img1.src = Imageness[0];
+
+  const circulos = document.querySelectorAll(".circles");
+  circulos[0].classList.add("resaltado");
+  const slideshow = () => {
+    img2.src = Imageness[i];
+    const circulo_actual = Array.from(circulos).find((el) => el.id == i);
+    Array.from(circulos).forEach((cir) => cir.classList.remove("resaltado"));
+    circulo_actual.classList.add("resaltado");
+
+    img2.classList.add("active");
+    i++;
+    porcentaje_actual += porcentaje_base;
+
+    progressBar.style.width = `${porcentaje_actual}%`;
+
+    if (i == Imageness.length) {
+      porcentaje_actual = porcentaje_base - porcentaje_base;
+      i = 0;
+    }
+
+    setTimeout(() => {
+      img1.src = img2.src;
+      img2.classList.remove("active");
+    }, 1000);
+  };
+
+  setInterval(slideshow, 2000);
+});
